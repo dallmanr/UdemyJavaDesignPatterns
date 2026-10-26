@@ -1,0 +1,19 @@
+• Creational patterns:
+    ◦ Focus on how objects are created
+    ◦ Decouples object creation from object usage
+    ◦ Provides flexibility in deciding which object is needed for a given use case
+    ◦ Makes the system independent of how objects are created, composed and used
+    ◦ Abstracts the complexity of the object request
+        ▪ Tell the system what you need, don’t care how its done, just tell it what you want
+
+Intent
+    • Provide a way to create objects using a common interface without exposing the creation logic
+    • Allows the actual object type to be decided at runtime by a subclass or factory method
+Problem
+    • When you have multiple related classes, you want to localise/centralise the object creation
+Solution
+    • Use a factory class with a method that decides which object to create based on input
+Benefits
+    • Centralises object creation
+    • Simplifies client code
+    • Easy to add new types down the road
